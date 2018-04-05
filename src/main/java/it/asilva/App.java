@@ -1,6 +1,8 @@
 package it.asilva;
 
 
+import org.apache.commons.io.IOUtils;
+
 import java.util.Collections;
 
 /**
@@ -12,6 +14,7 @@ public class App
     public static void main( String[] args )
     {
         Collections.emptyMap();
-        System.out.println( "Hello World!" );
+        final String s = IOUtils.class.toString();
+        System.out.println( "Hello World! I can load class " + s);
     }
 }
